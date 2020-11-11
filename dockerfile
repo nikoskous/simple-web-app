@@ -12,4 +12,4 @@ RUN npm run build --prod
 
 FROM nginx:1.15.8-alpine
 
-COPY --from=builder /ubuntu/src/app/dist/SampleApp/ /ubuntu/share/nginx/html
+COPY --from=builder /usr/src/app/dist/simple-web-app/ /usr/share/nginx/html
